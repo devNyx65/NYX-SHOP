@@ -1,61 +1,110 @@
 body{
     margin:0;
-    font-family:Arial;
-    background:#0b0b12;
+    font-family:Arial, sans-serif;
+    background:#0a0a12;
     color:white;
 }
 
-header{
-    background:linear-gradient(135deg,#6d28d9,#a855f7);
-    padding:25px;
-    text-align:center;
-}
-
+/* NAV */
 nav{
     display:flex;
     justify-content:center;
-    gap:10px;
-    background:#111827;
+    gap:12px;
     padding:15px;
+    background:#111827;
     flex-wrap:wrap;
 }
 
 nav a{
-    background:#7c3aed;
-    padding:10px 15px;
-    border-radius:10px;
-    color:white;
     text-decoration:none;
+    color:white;
+    padding:10px 15px;
+    background:#7c3aed;
+    border-radius:10px;
+    transition:0.2s;
 }
 
 nav a:hover{
     background:#a855f7;
+    transform:scale(1.05);
 }
 
-.container{
-    padding:40px;
+/* HERO */
+.hero{
     text-align:center;
+    padding:100px 20px;
+    background:linear-gradient(135deg,#0a0a12,#1a1a2e);
+}
+
+.hero h1{
+    font-size:55px;
+    margin:0;
+}
+
+.hero span{
+    color:#fbbf24;
+}
+
+.hero p{
+    color:#aaa;
+    margin-top:15px;
+    font-size:18px;
+}
+
+/* BUTTONS */
+.btn{
+    display:inline-block;
+    padding:14px 22px;
+    margin:10px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.gold{
+    background:#fbbf24;
+    color:black;
+}
+
+.gold:hover{
+    background:#ffd56a;
+}
+
+.purple{
+    background:#7c3aed;
+    color:white;
+}
+
+.purple:hover{
+    background:#a855f7;
+}
+
+/* CARDS */
+.container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:40px;
 }
 
 .card{
+    width:280px;
     background:#111827;
     border:1px solid #7c3aed;
     padding:20px;
     border-radius:15px;
-    margin:15px auto;
-    width:300px;
+    text-align:center;
 }
 
-.btn{
-    display:inline-block;
-    margin-top:10px;
-    padding:12px 18px;
-    background:#7c3aed;
-    border-radius:10px;
-    color:white;
-    text-decoration:none;
+.card h3{
+    color:#fbbf24;
 }
 
-.btn:hover{
-    background:#a855f7;
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0f0f1a;
+    color:#777;
 }
