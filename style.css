@@ -1,0 +1,49 @@
+body{
+    margin:0;
+    font-family:Arial;
+    background:#0f0f1a;
+    color:white;
+}
+
+header{
+    background:linear-gradient(135deg,#6d28d9,#9333ea);
+    padding:20px;
+    text-align:center;
+}
+
+a{
+    color:white;
+    text-decoration:none;
+}
+
+nav{
+    background:#1a1a2e;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:15px;
+}
+
+nav a{
+    padding:10px 15px;
+    background:#7c3aed;
+    border-radius:8px;
+}
+
+nav a:hover{
+    background:#9333ea;
+}
+
+.container{
+    padding:30px;
+    text-align:center;
+}
+
+.card{
+    background:#1a1a2e;
+    border:1px solid #7c3aed;
+    padding:20px;
+    margin:15px auto;
+    width:300px;
+    border-radius:12px;
+}
