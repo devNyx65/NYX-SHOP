@@ -3,6 +3,7 @@ body{
     font-family:Arial;
     background:#0b0c10;
     color:white;
+    overflow-x:hidden;
 }
 
 /* TOP BAR */
@@ -12,6 +13,8 @@ body{
     align-items:center;
     padding:20px 40px;
     background:#111827;
+    position:relative;
+    z-index:2;
 }
 
 .logo{
@@ -33,11 +36,12 @@ body{
 .hero{
     text-align:center;
     padding:120px 20px;
+    position:relative;
+    z-index:2;
 }
 
 .hero h1{
     font-size:50px;
-    margin-bottom:10px;
 }
 
 .hero p{
@@ -71,19 +75,16 @@ body{
     color:white;
 }
 
-/* SECTION */
-.section{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    padding:60px 20px;
-    flex-wrap:wrap;
-}
-
-.box{
-    width:280px;
-    padding:20px;
-    background:#111827;
-    border:1px solid #2e2e3a;
-    border-radius:12px;
+/* 🌟 GRAND N SUR LE COTE */
+.big-logo{
+    position:fixed;
+    left:-80px;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:350px;
+    font-weight:900;
+    color:rgba(124,58,237,0.12);
+    z-index:0;
+    user-select:none;
+    pointer-events:none;
 }
