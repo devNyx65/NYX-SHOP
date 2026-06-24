@@ -3,45 +3,42 @@ body{
     font-family:Arial;
     background:#0b0c10;
     color:white;
-    overflow-x:hidden;
 }
 
-/* TOP BAR */
-.topbar{
+/* NAV */
+nav{
     display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 40px;
+    justify-content:center;
+    gap:12px;
+    padding:15px;
     background:#111827;
-    position:relative;
-    z-index:2;
+    flex-wrap:wrap;
 }
 
-.logo{
-    font-weight:bold;
-    letter-spacing:2px;
-}
-
-.links a{
-    margin:0 10px;
-    color:#ccc;
+nav a{
     text-decoration:none;
+    color:white;
+    padding:10px 15px;
+    background:#7c3aed;
+    border-radius:10px;
 }
 
-.links a:hover{
-    color:white;
+nav a:hover{
+    background:#a855f7;
 }
 
 /* HERO */
 .hero{
     text-align:center;
-    padding:120px 20px;
-    position:relative;
-    z-index:2;
+    padding:100px 20px;
 }
 
 .hero h1{
     font-size:50px;
+}
+
+.hero span{
+    color:#fbbf24;
 }
 
 .hero p{
@@ -49,42 +46,68 @@ body{
 }
 
 /* BUTTONS */
-.cta{
-    margin-top:30px;
-}
-
 .btn{
+    display:inline-block;
     padding:12px 20px;
     margin:5px;
     border-radius:10px;
     text-decoration:none;
-    display:inline-block;
-}
-
-.primary{
     background:#7c3aed;
     color:white;
 }
 
-.primary:hover{
-    background:#9b5cf6;
+.btn:hover{
+    background:#a855f7;
 }
 
-.dark{
-    background:#1f2937;
-    color:white;
+.gold{
+    background:#fbbf24;
+    color:black;
 }
 
-/* 🌟 GRAND N SUR LE COTE */
-.big-logo{
-    position:fixed;
-    left:-80px;
-    top:50%;
-    transform:translateY(-50%);
-    font-size:350px;
-    font-weight:900;
-    color:rgba(124,58,237,0.12);
-    z-index:0;
-    user-select:none;
-    pointer-events:none;
+/* PRICING */
+.pricing{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.pricing-grid{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.price-card{
+    width:220px;
+    background:#111827;
+    border:1px solid #2e2e3a;
+    border-radius:15px;
+    padding:20px;
+    position:relative;
+}
+
+.price-card:hover{
+    transform:translateY(-10px);
+    border-color:#7c3aed;
+}
+
+.price-card h1{
+    font-size:40px;
+}
+
+.price-card p{
+    color:#aaa;
+}
+
+.tag{
+    position:absolute;
+    top:-10px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#fbbf24;
+    color:black;
+    padding:5px 10px;
+    border-radius:10px;
+    font-size:12px;
 }
