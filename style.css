@@ -1,110 +1,89 @@
 body{
     margin:0;
-    font-family:Arial, sans-serif;
-    background:#0a0a12;
+    font-family:Arial;
+    background:#0b0c10;
     color:white;
 }
 
-/* NAV */
-nav{
+/* TOP BAR */
+.topbar{
     display:flex;
-    justify-content:center;
-    gap:12px;
-    padding:15px;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
     background:#111827;
-    flex-wrap:wrap;
 }
 
-nav a{
+.logo{
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.links a{
+    margin:0 10px;
+    color:#ccc;
     text-decoration:none;
-    color:white;
-    padding:10px 15px;
-    background:#7c3aed;
-    border-radius:10px;
-    transition:0.2s;
 }
 
-nav a:hover{
-    background:#a855f7;
-    transform:scale(1.05);
+.links a:hover{
+    color:white;
 }
 
 /* HERO */
 .hero{
     text-align:center;
-    padding:100px 20px;
-    background:linear-gradient(135deg,#0a0a12,#1a1a2e);
+    padding:120px 20px;
 }
 
 .hero h1{
-    font-size:55px;
-    margin:0;
-}
-
-.hero span{
-    color:#fbbf24;
+    font-size:50px;
+    margin-bottom:10px;
 }
 
 .hero p{
     color:#aaa;
-    margin-top:15px;
-    font-size:18px;
 }
 
 /* BUTTONS */
+.cta{
+    margin-top:30px;
+}
+
 .btn{
-    display:inline-block;
-    padding:14px 22px;
-    margin:10px;
-    border-radius:12px;
+    padding:12px 20px;
+    margin:5px;
+    border-radius:10px;
     text-decoration:none;
-    font-weight:bold;
+    display:inline-block;
 }
 
-.gold{
-    background:#fbbf24;
-    color:black;
-}
-
-.gold:hover{
-    background:#ffd56a;
-}
-
-.purple{
+.primary{
     background:#7c3aed;
     color:white;
 }
 
-.purple:hover{
-    background:#a855f7;
+.primary:hover{
+    background:#9b5cf6;
 }
 
-/* CARDS */
-.container{
+.dark{
+    background:#1f2937;
+    color:white;
+}
+
+/* SECTION */
+.section{
     display:flex;
     justify-content:center;
-    flex-wrap:wrap;
     gap:20px;
-    padding:40px;
+    padding:60px 20px;
+    flex-wrap:wrap;
 }
 
-.card{
+.box{
     width:280px;
+    padding:20px;
     background:#111827;
-    border:1px solid #7c3aed;
-    padding:20px;
-    border-radius:15px;
-    text-align:center;
-}
-
-.card h3{
-    color:#fbbf24;
-}
-
-/* FOOTER */
-footer{
-    text-align:center;
-    padding:20px;
-    background:#0f0f1a;
-    color:#777;
+    border:1px solid #2e2e3a;
+    border-radius:12px;
 }
